@@ -1,0 +1,85 @@
+body {
+  margin: 70px 4%;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+#noscript {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 98%;
+   padding: 1%;
+   background-color: #DDDDDD;
+   border-bottom: solid #000000 1px;
+}
+
+h1 strong {
+   text-transform: uppercase;
+}
+
+h1.tag {
+   margin: 0;
+}
+
+h4 {
+   font-style: italic;
+}
+
+code {
+   background-color: #EEEEEE;
+}
+
+.block {
+   display: block;
+   clear: both;
+   width: 80%;
+   padding: 3px;
+   margin: 20px 5%;
+}
+
+em {
+   font-style: italic;
+}
+
+ul {
+   margin-top: 0;
+}
+
+#nextpage {
+   text-align: right;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+}
+a:hover {
+   background-color: #EEEEEE;
+}
+
+table {
+   margin: 0 5%;
+   width: 80%;
+}
+table th {
+   padding: 5px;
+   background-color: #DDDDDD;
+}
+table td {
+   padding: 3px 5px;
+   background-color: #EEEEEE;
+}
+
+/*
+ * Fix for Opera7.1x bug that causes it
+ * to repeat the margin of a final paragraph,
+ * "outside" the containing box.
+ *
+ * This Fix is also being use in this
+ * instance along with the Fixed #footNav.
+ */
+p.end {
+   margin-bottom: 10px; 
+   padding-bottom: 70px; 
+}

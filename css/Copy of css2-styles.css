@@ -1,0 +1,305 @@
+
+body {
+   margin: 0;
+   color: #000000;
+   background-color: #FFFFFF;
+   font-size: 0.8em;
+   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+div#docarea {
+   width: 750px;
+   margin: auto;
+   padding: 13px;
+}
+
+a {
+   text-decoration: none;	
+   color: #003366;
+}
+a:hover { color: #990000; }
+a:visited { color: #660066; }
+
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.05em; }
+h6 { font-size: 0.9em; }
+
+
+/*
+ * Fix for Opera7.1x bug that causes it
+ * to repeat the margin of a final paragraph,
+ * "outside" the containing box.
+ */ 
+p.end {
+   margin-bottom: 0; 
+   padding-bottom: 20px; 
+}
+
+.printonly {
+   display: none;
+}
+
+ul#topnav {
+   display: block;
+   margin: 1% 0;
+   list-style: none;
+   text-align: right;
+}
+ul#topnav li {
+   display: inline;
+   font-size: 0.9em;
+   font-weight: bold;
+   margin: 0;
+}
+ul#topnav li a em {
+   text-decoration: underline;
+   font-style: normal;
+}
+
+
+h2#header {
+   line-height: 2em;
+   color: #FFFFFF;
+   background-color: #99CCFF;
+   font-weight: bold;
+   font-size: 1em;
+   text-align: center;
+   margin-top: 3px;
+   margin-bottom: 20px;
+}
+
+
+div#content {
+   float: right;
+   width: 540px; /* 72%; */
+}
+
+div#content a { font-weight: bold; }
+
+div#content p.intro {
+   border-top: dashed #000000 1px;
+   margin-top: 25px;
+   padding: 10px 0;
+   font-weight: bold;
+}
+
+div#content h4 span.author {
+   font-size: 0.85em;
+   color: #666666;
+   padding: 0;
+   margin: 0;
+}
+
+div#content h4 span.date, div#content h4 span.rating {
+   font-size: 0.65em;
+   color: #999999;
+   padding: 0;
+   margin: 0;
+}
+
+div#content div#profile {
+   float: right;
+   width: 220px;
+   background-color: #EEEEE1;
+   border-style: dashed;
+   border-color: #666666;
+   border-width: 1px;
+   color: #000000;
+   padding: 5px;
+   margin-top: 0;
+   margin-right: 0;
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+div#content div#profile h3.name {
+   font-size: 1em;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+div#content div#profile img {
+   float:right;
+}
+
+div#content div#profile p {
+   font-size: 0.85em;
+   color: #000000;
+}
+
+div#contentdiv#pagesnumbers {
+   float: left;
+   width: 50%;
+   font-size: 0.8em;
+}
+
+div#content div#nextsub {
+   font-weight: bold;
+   text-align: right;
+}
+
+div#content div#keepoptions {
+   border-top: dashed #000000 1px;
+   margin-top: 25px;
+   text-align: center;
+   font-weight: bold;
+   padding: 10px;
+   line-height: 20px;
+}
+
+
+div#local {
+   font-size: 0.7em;
+   width: 188px; /* 25%; */
+   border: solid #99CCFF 5px;
+   overflow: hidden;
+}
+
+div#local p {
+   margin: 5px;
+   padding: 0;
+}
+
+div#local h1, div#local h2 {
+   margin: 0;
+   padding: 3px 0;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: #99CCFF;
+}
+
+div#local ul#mainnav {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+div#local ul#mainnav li {
+   margin: 0;
+   padding: 0;
+}
+
+div#local ul#mainnav li a {
+   display: block;
+   padding: 3px;
+   margin: 0;
+   width: 96%;
+   border: solid #FFFFFF 1px;
+   background-color: #CCCCCC;
+}
+div#local ul#mainnav li a:hover {
+   background-color: #AAAAAA; 
+}
+
+div#local ul#mainnav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+div#local ul#mainnav ul li a {
+   width: 89%;
+   padding-left: 8%;
+   background-color: #EEEEEE;
+}
+div#local ul#mainnav ul li a:hover {
+   background-color: #DDDDDD;
+}
+
+
+div#footer {
+   clear: both;
+   display: block;
+   line-height: 2.2em;
+   color: #FFFFFF;
+   background-color: #99CCFF;
+   text-align: center;
+   font-size: 0.8em;
+}
+
+div#footer a {
+   color: #666666;
+   background-color: inherit;
+   text-decoration: none;
+}
+
+div#footer span.printonly {
+   display: none;
+}
+
+blockquote {
+   margin: 20px;
+   padding: 10px;
+   border: solid #000000 1px;
+}
+blockquote.bible {
+   background-color: #FF9900;
+   color: #000000;
+}
+blockquote.prayer {
+   background-color: #00E2FD;
+   color: #000000;
+}
+blockquote.admin {
+   background-color: #98F60C;
+   color: #000000;
+}
+blockquote.klm {
+   background-color: #FFFF00;
+   color: #000000;
+}
+blockquote.gospel {
+   background-color: #FFCC00;
+   color: #000000;
+}
+blockquote.word {
+   background-color: #FF6600;
+   color: #000000;
+}
+blockquote.pkss {
+   background-color: #FF6666;
+   color: #000000;
+}
+blockquote.article {
+   background-color: #FF6699;
+   color: #000000;
+}
+blockquote.lent {
+   background-color: #CF00C7;
+   color: #FFFFFF;
+
+/* -- BEGIN Fixes for incompatible IE Browsers -- *
+ * ------- Mac IE4.5 Lower and IE5.5 Lower ------- */
+
+/*
+ * This method should only be used in connection
+ * with some NN4 hiding method because it throws
+ * a JavaScript error in Netscape 4.x.
+ */
+
+div#content {
+   width: 521px;
+
+   voice-family: "\"}\"";
+/* some browsers have a parsing bug
+ * and will ignore the following rules!
+ * These include NN4, Mac IE4.5 and IE5.5 */
+   voice-family: inherit;
+
+   width: 540px;
+}html { /* reset closing brace for IE5 */ }
+
+div#local {
+   width: 181px;
+
+   voice-family: "\"}\"";
+/* some browsers have a parsing bug
+ * and will ignore the following rules!
+ * These include NN4, Mac IE4.5 and IE5.5 */
+   voice-family: inherit;
+
+   width: 188px;
+}html { /* reset closing brace for IE5 */ }

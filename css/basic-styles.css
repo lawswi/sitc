@@ -1,0 +1,10 @@
+body {font-family:Arial,Helvetica,sans-serif;margin:0;}
+
+tr.topborder td {border-top-style:dashed;border-width:thin;border-color:black;}
+
+.programme-col1 {white-space:nowrap;font-weight:bold;text-align:right;padding:0.5em 1em 0.5em 0;vertical-align:text-top;} 
+.programme-col2 {color:blue;font-weight:bold;text-align:left;padding:0.5em 1em 0.5em 0;vertical-align:text-top;max-width:60%;} 
+.programme-col3 {text-align:left;padding:0.5em 0;vertical-align:text-top;max-width:40%;}
+.previous-col1 {white-space:nowrap;padding-left:0.5em;padding-right:0.75em;vertical-align:text-top}
+
+.screen {display:none;}

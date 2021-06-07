@@ -1,0 +1,188 @@
+/* ---------- BEGIN unstyle 'basic-styles.css' ---------- */
+
+/*
+ * Because our <link to 'basic-styles.css'
+ * has no media attribute we unstyle the
+ * style rules first by chaging them
+ * back to there default sttings.
+ *
+ * Some of the styles are to remain the
+ * same and therefore they are not included
+ * here, and some have been change directly
+ * to there new rules.
+ */
+
+body {
+   font-family: "Times New Roman", Times, serif;
+}
+
+div#header h2 {
+   text-align: left;
+}
+
+#footer {
+	font-size: 8pt;
+}
+
+/* ---------- END unstyle 'basic-styles.css' ---------- */
+
+
+/* ---------- HIDE NON-ESSETIAL ELEMENTS ---------- */
+ul#topnav, div#local, .screenonly {
+   display: none;
+}
+
+
+body {
+   font-size: 12pt;
+   margin: 0;
+}
+
+/* the Owen hack -- http://www.albin.net/CSS/OwenHack.html */
+/* the following selector is NOT seen by Opera 6 (and below) or by IE6/win */
+head:first-child+body h2#header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 20mm; /* was 15mm */
+}
+
+h2#header {
+   margin: 0;
+   padding: 0;
+   font-size: 28pt;
+   font-weight: normal;
+   font-style: italic;
+   text-align: right;
+   border-bottom: solid #000000 2px;
+}
+
+h2#header span#catchphrase {
+   display: block;
+   font-size: 16pt;
+}
+
+div#content h1 {
+   padding: 5mm 0;
+   margin: 0;
+   border-top: solid #000000 2px;
+}
+div#content h1:first-child {
+   border: none;
+}
+
+/* the Owen hack -- http://www.albin.net/CSS/OwenHack.html */
+/* the following selector is NOT seen by Opera 6 (and below) or by IE6/win */
+head:first-child+body div#content {
+   padding-top: 20mm;
+   padding-bottom: 20mm;
+}
+
+/* the Owen hack -- http://www.albin.net/CSS/OwenHack.html */
+/* the following selector is NOT seen by Opera 6 (and below) or by IE6/win */
+head:first-child+body div#footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+div#footer {
+   line-height: 15mm;
+   text-align: center;
+   border-top: solid #000000 2px;
+}
+
+
+/* ----- BEGIN Linked Header ----- */
+
+h1.linkedh1h2, h2.linkedh1h2 {
+   text-align: center;
+}
+h1.linkedh1h2 {
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+h2.linkedh1h2 {
+   padding-top: 0;
+   margin-top: 0;
+   font-size: 1em;
+   text-transform: uppercase;
+}
+
+/* ----- END Linked Header ----- */
+
+
+a:link, a:visited {
+   color: #800080;
+   font-weight: bold;
+   font-style: italic;
+   text-decoration: none;
+}
+
+
+/* ----- BEGIN - Image positions etc ----- */
+
+img {
+   float: right;
+   margin: 15px;
+   border: solid #999999 1px;
+}
+
+p img {
+   float: none;
+   margin: 0;
+}
+
+img.fullbanner, img.halfbanner, img.verticalbanner, img.skyscraper, img.wideskyscraper, img.leaderboard {
+   float: none;
+   display: block;
+   margin: 10px auto;
+   border: none;
+}
+
+/* ----- END - Image positions etc ----- */
+
+
+/* ---------- Addvanced Print Enhantsments ---------- */
+
+div#content a[href]:after {
+   content: "[ " attr(href) " ]";
+   vertical-align: super;
+   font-size: 0.7em;
+   font-weight: normal;
+   color: #000000;
+}
+div#content a[href^="/"]:after {
+   content: "[ http://www.kingdomliving.org" attr(href) " ]";
+}
+
+div#content abbr[title], div#content acronym[title] {
+   border-bottom: none;
+}
+div#content abbr[title]:before, div#content acronym[title]:before {
+   content: attr(title) " (";
+}
+div#content abbr[title]:after, div#content acronym[title]:after {
+   content: ")"
+}
+
+
+/* -- BEGIN Fixes for incompatible IE Browsers -- *
+ * ------- Mac IE4.5 Lower and IE5.5 Lower ------- */
+
+/*
+ * This method should only be used in connection
+ * with some NN4 hiding method because it throws
+ * a JavaScript error in Netscape 4.x.
+ */
+
+div#content img.halfbanner {
+   margin: 10px 77px;
+
+   voice-family: "\"}\"";
+   voice-family: inherit;
+
+   margin: 10px auto;
+}html { /* reset closing brace for IE5 */ }
+
+/* -- END Fixes from IE incompatible Browsers -- */
